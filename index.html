@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yayasan KRISTAL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007BFF;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .counter {
+            font-size: 2em;
+            font-weight: bold;
+            color: #007BFF;
+        }
+        /* Tabel untuk jumlah spesies ikan */
+        .species-table {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .species-column {
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2em;
+            width: 30%;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+        }
+        .species-column h4 {
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+        table {
+            width: 100%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        table, th, td {
+            border: 1px solid #007BFF;
+        }
+        th, td {
+            padding: 10px;
+            font-size: 1.2em;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+
+        /* Style untuk rata tengah pada setiap judul */
+        h2, h3, h4 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yayasan Konservasi Restorasi Ikan Tawar dan Lingkungan (KRISTAL)</h1>
+        <nav>
+            <ul>
+                <li><a href="#species">Jumlah Spesies</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#mission">Misi</a></li>
+                <li><a href="#work">Pekerjaan Kami</a></li>
+                <li><a href="#programs">Program Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Jumlah Spesies -->
+    <section id="species">
+        <h2>Jumlah Spesies</h2>
+        <div class="species-table">
+            <div class="species-column">
+                <h4>Spesies Ikan Air Tawar</h4>
+                <span id="fishCount" class="counter">0</span>
+            </div>
+            <div class="species-column">
+                <h4>Spesies Ikan Endemik</h4>
+                <span id="endemicCount" class="counter">0</span>
+            </div>
+            <div class="species-column">
+                <h4>Spesies Ikan Terancam Punah</h4>
+                <span id="endangeredCount" class="counter">0</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="about">
+        <h3>Tentang Kami</h3>
+        <p>Yayasan Konservasi Restorasi Ikan Tawar dan Lingkungan (KRISTAL) adalah organisasi nirlaba yang didedikasikan untuk pelestarian dan restorasi ekosistem air tawar serta pengelolaan berkelanjutan populasi ikan air tawar di Indonesia. Kami bertujuan untuk mengembangkan dan menerapkan strategi konservasi berbasis ilmu pengetahuan, melakukan penelitian, dan berkolaborasi dengan berbagai pemangku kepentingan untuk melindungi dan memulihkan lingkungan akuatik.</p>
+    </section>
+
+    <!-- Misi -->
+    <section id="mission">
+        <h3>Misi Kami</h3>
+        <p>KRISTAL fokus pada konservasi spesies air tawar, restorasi habitat akuatik, dan promosi praktik perikanan berkelanjutan. Melalui penelitian, pendidikan, dan keterlibatan masyarakat, kami berusaha untuk meningkatkan kesehatan ekosistem air tawar dan memastikan keberlanjutan jangka panjangnya.</p>
+    </section>
+
+    <!-- Pekerjaan Kami -->
+    <section id="work">
+        <h3>Pekerjaan Kami</h3>
+        <p>KRISTAL berkomitmen untuk:</p>
+        <ul>
+            <li>Proyek Konservasi: Melaksanakan inisiatif konservasi yang bertujuan melindungi habitat dan spesies air tawar.</li>
+            <li>Penelitian dan Pendidikan: Melakukan penelitian ilmiah untuk memahami ekosistem air tawar dengan lebih baik dan berbagi pengetahuan melalui program pendidikan kepada masyarakat.</li>
+            <li>Kerjasama: Bekerja sama dengan pemerintah, organisasi non-pemerintah, dan komunitas lokal untuk mencapai tujuan konservasi bersama.</li>
+        </ul>
+    </section>
+
+    <!-- Program Kami -->
+    <section id="programs">
+        <h3>Program Kami</h3>
+        <ul>
+            <li>Restorasi Habitat Ikan Tawar</li>
+            <li>Pendidikan Lingkungan untuk Masyarakat</li>
+            <li>Penelitian dan Pengembangan Konservasi</li>
+            <li>Kerjasama dengan Komunitas Lokal</li>
+        </ul>
+    </section>
+
+    <div class="image-container">
+        <img src="path/to/ikan.jpg" alt="Ikan Tawar">
+        <img src="path/to/peta-indonesia.jpg" alt="Peta Indonesia">
+    </div>
+
+    <!-- Kontak -->
+    <section id="contact">
+        <h3>Kontak Kami</h3>
+        <p>Jika Anda memiliki pertanyaan atau ingin berkolaborasi dengan kami, silakan hubungi:</p>
+        <p>Email: info@yayasankristal.org</p>
+        <p>Telepon: (0274) 123-4567</p>
+        <p>Alamat: Jl. Konservasi No. 1, Yogyakarta, Indonesia</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yayasan KRISTAL. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+        function animateCounter(id, start, end, duration) {
+            let element = document.getElementById(id);
+            let range = end - start;
+            let current = start;
+            let increment = range / duration;
+            
+            let counter = setInterval(function() {
+                current += increment;
+                if (current >= end) {
+                    current = end;
+                    clearInterval(counter);
+                }
+                element.textContent = Math.floor(current);
+            }, 10);
+        }
+
+        window.onload = function() {
+            animateCounter("fishCount", 0, 1248, 100);
+            animateCounter("endemicCount", 0, 130, 50);
+            animateCounter("endangeredCount", 0, 150, 50);
+        };
+    </script>
+</body>
+</html>
